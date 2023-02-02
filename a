@@ -1,0 +1,12 @@
+void    map_display_structure(t_map *map);
+int     map_fill_name(char *file, char map_file[96]);
+int     map_file_format(char *file);
+int     map_init(char *map_file, t_map *map);
+int     map_fill_map(t_map *map);
+int     map_floor_color(t_map *map, char *buffer);
+int     map_ceiling_color(t_map *map, char *buffer);
+int	    map_reset_buffer(char *buffer);
+int	    map_compare(char *u);
+int	    open_map(char *u);
+int	    map_apply_function(t_map *map, char *u, int funCode);
+char	*connect_map(char *map, int max);
